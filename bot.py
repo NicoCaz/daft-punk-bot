@@ -120,7 +120,7 @@ Letras={
         "You are the night, you are the ocean \nYou are the light behind the cloud \nYou are the end and the beginning",
         "A world with time is not allowed \nThere's no such thing as competition \nTo find a way we lose control",
         "Remember love, the holy mission \nThis is the journey of the soul",
-        "The perfect song is written with silence",
+        "The perfect song is framed with silence",
         "Your home's a promise long forgotten \nIt is the birthplace of your dreams",
 
         ),
