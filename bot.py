@@ -166,5 +166,8 @@ class Twit:
 lyrics = Twit()
 
 while  True:
-    api.update_status(lyrics.twit())
+    try:
+        api.update_status(lyrics.twit())
+    except ValueError:
+        api.update_status(lyrics.twit())
     time.sleep(1800)
