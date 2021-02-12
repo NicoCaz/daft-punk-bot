@@ -72,7 +72,6 @@ Letras=("It might not be the right time \nI might not be the right one",
         "Pictures came with touch",   
         "A painter in my mind \nTell me what you see",
         "A half forgotten song",
-
         "Where do I belong",
         "Tell me what you see \nI need something more",
         "Kiss suddenly alive \nHappiness arrive \nHungry like a storm \nHow do I begin",
@@ -133,4 +132,4 @@ lyrics = Twit()
 
 while  True:
     api.update_status(lyrics.twit())
-    time.sleep(1800)
+    time.sleep(3600)
