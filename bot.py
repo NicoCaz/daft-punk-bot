@@ -14,58 +14,38 @@ auth.set_access_token(key, secret)
 api = tweepy.API(auth)
 
 
-Letras={
-    "1":("Something About Us",
-        "It might not be the right time \nI might not be the right one",
+Letras=("It might not be the right time \nI might not be the right one",
         "But there's something about us I want to say \nCause there's something between us anyway",
         "I might not be the right one \nIt might not be the right time",
         "But there's something about us I've got to do \nSome kind of secret I will share with you",
         "I need you more than anything in my life \nI want you more than anything in my life \nI'll miss you more than anyone in my life \nI love you more than anyone in my life",
-        ),
-    "2":("One more Time",
         "One more time x3",
         "We're gonna celebrate \nOh yeah, all right \nDon't stop the dancing",
         "You know I'm just feeling",
         "Don't wait to late \nUhmmm, you know \nYou don't stop \nYou can't stop \nWe're gonna celebrate",
         "Celebrate and dance so free \nMusic's got me feeling so free \nCelebrate and dance so free",
-        ),
-    "3":("Digital Love",
         "Last night I had a dream about you \nIn this dream I'm dancing right beside you \nAnd it looked like everyone was having fun \nA kind of feeling I've waited so long",
         "Don't stop come a little closer \nAs we jam the rythm gets stronger",
         "There's nothing wrong with just a little bit of fun \nWe were dancing all night long",
         "The time is right to put my arms around you \nYou're feeling mine \nYou wrap your arms around too \nBut suddenly I feel the shining sun \nBefore I knew it this dream was all gone",
         "Ooh I don't know what to do \nAbout this dream and you \nI wish this dream comes true",
         "Why don't you play the game?",
-        ),
-    "4":("Harder, Better, Faster, Stronger",
         "Work it, make it, do it, makes us \nHarder, better, faster, stronger \nMore than, hour, our, never \nEver, after, work is, over",
         "Work it, make it, do it, makes us \nHarder, better, faster, stronger \nWork it harder, make it better \nDo it faster, makes us stronger \nMore than ever, hour after, our \nWork is never over",
-        ),
-    "5":("Around the world",
         "Around the world, around the world x39",
-    ),
-    "6":("Give Life Back To Music",
         "Let the music in tonight, just turn on the music",
         "Let the music of your life; give life back to music",
         "Life back to music \nGive life back to music",
-        ),
-    "7":("The Game Of Love",    
         "There is a game of love \nThis is a game of love \nAnd it was you \nThe one that would be breaking my heart \nWhen you decided to walk away",
         "When I wanted you to stay \n(Ooooooo....) \nAnd it was you \nI just wanted you to stay \nMe, I just wanted you to stay",
-        ),
-    "8":("Giorgio By Moroder",
         "They already had discotheques",
         "And then have a sound of the future",
         "And I said,\n'Wait a second ,I know the synthesizer',\nwhy don't I use the synthesizer",
         "Which is the sound of the future?",
         "My name is Giovanni Giorgio, but everybody calls me Giorgio",
         "You can do whatever you want \nSo nobody told me what to do \nAnd there was no preconception of what to do",
-        ),
-    "9":("Within",
         "There are so many things that I don't understand \nThere's a world within me that I cannot explain",
         "I've been for some time \nLooking for someone \nI need to know now \nPlease, tell me who I am?",
-        ),
-    "10":("Instant Crush",
         "I didn't want to be the one to forget \nI thought of everything I'd never regret \nA little time with you is all that I get",
         "That's all we need, because it's all we can take",
         "One thing I never see the same when your round",
@@ -83,14 +63,10 @@ Letras={
         "One thousand lonely stars hiding in the cold \nTake it, I don't wanna sing anymore",
         "I don't understand, don't get upset, I'm not with you",
         "We're swimming around, it's all I do when I'm with you",
-        ),
-    "11":("Lose Yourself To Dance",
         "I know you don't get chance to take a break this often",
         "I know your life is speeding and it isn't stopping",
         "You take my shirt and just go ahead and wipe up all the \nSweat, sweat, sweat",
         "Lose yourself to dance \nLose yourself to dance \nLose yourself to dance",
-    ),
-    "12":("Touch",
         "Touch, I remember touch",
         "I need something more in my mind",
         "Pictures came with touch",   
@@ -103,28 +79,20 @@ Letras={
         "Hold on, hold on \nIf love is the answer you're home",
         "Touch sweet touch \nYou give me too much to feel",
         "You’ve almost convinced me I’m real \nI need something more \nI need something more",
-        
-        ),
-    "13":("Get Lucky",
-       "Like the legend of the Phoenix \nAll ends with beginnings",
+        "Like the legend of the Phoenix \nAll ends with beginnings",
         "We've come too far \nTo give up who we are \nSo let's raise the bar \nAnd our cups to the stars",
-       "She's up all night to the Sun, I'm up all night to get some \nShe's up all night for good fun, I'm up all night to get lucky",   
-       "We're up all night to the Sun, we're up all night to get some",
-       "We're up all night for good fun, we're up all night to get lucky",
-       "We're up all night to get lucky, we're up all night to get lucky",
-       "The present has no ribbon \nYour gift keeps on giving \nWhat is this I'm feeling? \nIf you wanna leave, I'm with it",
-       "We're up all night to get back together",
-       ),
-    "14":("Beyond",       
+        "She's up all night to the Sun, I'm up all night to get some \nShe's up all night for good fun, I'm up all night to get lucky",   
+        "We're up all night to the Sun, we're up all night to get some",
+        "We're up all night for good fun, we're up all night to get lucky",
+        "We're up all night to get lucky, we're up all night to get lucky",
+        "The present has no ribbon \nYour gift keeps on giving \nWhat is this I'm feeling? \nIf you wanna leave, I'm with it",
+        "We're up all night to get back together",
         "Dream, beyond dreams \nBeyond life you will find your song",
         "You are the night, you are the ocean \nYou are the light behind the cloud \nYou are the end and the beginning",
         "A world with time is not allowed \nThere's no such thing as competition \nTo find a way we lose control",
         "Remember love, the holy mission \nThis is the journey of the soul",
         "The perfect song is framed with silence",
         "Your home's a promise long forgotten \nIt is the birthplace of your dreams",
-
-        ),
-    "15":("Fragments Of Time",
         "Driving this road down to paradise",
         "Our only plan is to improvise",
         "That I don't ever want it to end",
@@ -133,18 +101,18 @@ Letras={
         "But since I can't stay",
         "I'll just keep playing back \nThese fragments of time \nEverywhere I go, these moments will shine",
         "Familiar faces I've never seen \nLiving the gold and the silver dream \nMaking me feel like I'm 17",
-    ),
-    "16":("Doin' It Right",
         "Doin' it right",
         "Everybody will be dancing \nAnd we'll be feeling it right",
         "If you do it right \nLet it go all night \nShadows on you break \nOut into the light",
         "If you lose your way tonight \nThat's how you know the magic's right",
-    ),
-    "17":("meme",
         "Veridis Quo \ntururu tururu",
-        "Motherboard noises*",
-    ),
-}
+        "Motherboard noises*",       
+        )
+        
+               
+        
+        
+    
 
 
 
@@ -155,19 +123,14 @@ class Twit:
         self.cancion=-1
     def twit(self):
         while self.anterior == self.cancion:
-            self.cancion=random.randint(1,len(Letras))
-        self.anterior=self.cancion
-        array= Letras[str(self.cancion)]
-        frase=random.randint(1,len(Letras[str(self.cancion)])-1)        
-        return array[frase]
+            self.cancion=random.randint(0,len(Letras))
+        self.anterior=self.cancion        
+        return Letras[self.cancion]
    
 
 
 lyrics = Twit()
 
 while  True:
-    try:
-        api.update_status(lyrics.twit())
-    except ValueError:
-        api.update_status(lyrics.twit())
+    api.update_status(lyrics.twit())
     time.sleep(1800)
